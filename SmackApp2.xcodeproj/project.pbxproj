@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E0C55C92214C39A0043243C /* customButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C55C82214C39A0043243C /* customButtons.swift */; };
+		1E0C55CC2214CBD90043243C /* emptyTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C55CB2214CBD90043243C /* emptyTestFile.swift */; };
 		1E2FC348220E1BFE00EFC9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2FC347220E1BFE00EFC9A8 /* AppDelegate.swift */; };
 		1E2FC34D220E1BFE00EFC9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2FC34B220E1BFE00EFC9A8 /* Main.storyboard */; };
 		1E2FC34F220E1C0000EFC9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2FC34E220E1C0000EFC9A8 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		1E0C55C82214C39A0043243C /* customButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButtons.swift; sourceTree = "<group>"; };
+		1E0C55CB2214CBD90043243C /* emptyTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emptyTestFile.swift; sourceTree = "<group>"; };
 		1E2FC344220E1BFE00EFC9A8 /* SmackApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmackApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2FC347220E1BFE00EFC9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E2FC34C220E1BFE00EFC9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		1E0C55CA2214C6220043243C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1E0C55CB2214CBD90043243C /* emptyTestFile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				1E9DC721220E625C00CD14B2 /* GradientView.swift in Sources */,
 				1E0C55C92214C39A0043243C /* customButtons.swift in Sources */,
 				1E2FC348220E1BFE00EFC9A8 /* AppDelegate.swift in Sources */,
+				1E0C55CC2214CBD90043243C /* emptyTestFile.swift in Sources */,
 				1E2FC35D220E2C8E00EFC9A8 /* SWRevealViewController.m in Sources */,
 				1E9DC724220E6FB100CD14B2 /* Constants.swift in Sources */,
 			);
