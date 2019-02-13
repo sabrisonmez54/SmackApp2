@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E0C55C92214C39A0043243C /* customButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0C55C82214C39A0043243C /* customButtons.swift */; };
 		1E2FC348220E1BFE00EFC9A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2FC347220E1BFE00EFC9A8 /* AppDelegate.swift */; };
 		1E2FC34D220E1BFE00EFC9A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E2FC34B220E1BFE00EFC9A8 /* Main.storyboard */; };
 		1E2FC34F220E1C0000EFC9A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2FC34E220E1C0000EFC9A8 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E0C55C82214C39A0043243C /* customButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButtons.swift; sourceTree = "<group>"; };
 		1E2FC344220E1BFE00EFC9A8 /* SmackApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmackApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2FC347220E1BFE00EFC9A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E2FC34C220E1BFE00EFC9A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -54,6 +56,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E0C55CA2214C6220043243C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		1E2FC33B220E1BFE00EFC9A8 = {
 			isa = PBXGroup;
 			children = (
@@ -76,7 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				1E9DC722220E6F6100CD14B2 /* Utilities */,
-				1E9DC71F220E624C00CD14B2 /* Model */,
+				1E0C55CA2214C6220043243C /* Model */,
 				1E9DC71E220E624300CD14B2 /* View */,
 				1E2FC35E220E2FF100EFC9A8 /* Controller */,
 				1E2FC359220E2C5100EFC9A8 /* Supporting Files */,
@@ -114,15 +123,9 @@
 			isa = PBXGroup;
 			children = (
 				1E9DC720220E625C00CD14B2 /* GradientView.swift */,
+				1E0C55C82214C39A0043243C /* customButtons.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		1E9DC71F220E624C00CD14B2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		1E9DC722220E6F6100CD14B2 /* Utilities */ = {
@@ -274,6 +277,7 @@
 				1E9DC728220F88EB00CD14B2 /* CreateAccountVC.swift in Sources */,
 				1E9DC726220E74F000CD14B2 /* LoginVC.swift in Sources */,
 				1E9DC721220E625C00CD14B2 /* GradientView.swift in Sources */,
+				1E0C55C92214C39A0043243C /* customButtons.swift in Sources */,
 				1E2FC348220E1BFE00EFC9A8 /* AppDelegate.swift in Sources */,
 				1E2FC35D220E2C8E00EFC9A8 /* SWRevealViewController.m in Sources */,
 				1E9DC724220E6FB100CD14B2 /* Constants.swift in Sources */,
