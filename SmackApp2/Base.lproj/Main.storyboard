@@ -182,7 +182,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8bo-jE-k9j">
                                         <rect key="frame" x="0.0" y="107" width="250" height="2"/>
@@ -306,7 +306,7 @@
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-h5-CTg">
                                         <rect key="frame" x="0.0" y="169" width="250" height="2"/>
@@ -328,6 +328,7 @@
                                 <state key="normal" title="Choose an Avatar"/>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="Dq3-no-q4x" eventType="touchUpInside" id="12m-es-A5h"/>
+                                    <action selector="pickAvatarPressed:" destination="2eO-Vd-R0A" eventType="touchUpInside" id="dD6-lx-X3U"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="UQu-lT-ivs">
@@ -355,6 +356,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="2eO-Vd-R0A" eventType="touchUpInside" id="o7R-sW-jdJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pww-Gd-2Sp">
                                 <rect key="frame" x="107" y="465" width="161" height="30"/>
@@ -362,6 +366,7 @@
                                 <state key="normal" title="Generate background color"/>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="Dq3-no-q4x" eventType="touchUpInside" id="wrS-3y-hLw"/>
+                                    <action selector="pickBGColorPressed:" destination="2eO-Vd-R0A" eventType="touchUpInside" id="jEE-i9-3Zh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -382,6 +387,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UHW-4u-X7I"/>
                     </view>
+                    <connections>
+                        <outlet property="emailTxt" destination="b3c-Ba-cta" id="Kwe-42-UCt"/>
+                        <outlet property="passTxt" destination="cXM-Yt-bRM" id="n7M-vH-2tt"/>
+                        <outlet property="userImg" destination="UQu-lT-ivs" id="Ech-bb-ymu"/>
+                        <outlet property="usernameTxt" destination="TMz-Nr-2eE" id="Jzm-I9-4f0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDx-nJ-lgH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

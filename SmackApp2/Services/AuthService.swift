@@ -40,7 +40,6 @@ class AuthService{
         set{
         defaults.set(newValue, forKey: USER_EMAIL)
          }
-        
     }
     
     func registerUser(email:String, password:String, completion: @escaping CompletionHandler){
@@ -62,10 +61,6 @@ class AuthService{
                 debugPrint(response.result.error as Any)
             }
         }
-        
-        
     }
-    
-    
     
 }
