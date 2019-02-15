@@ -7,7 +7,22 @@
 //
 
 import Foundation
-// Segues
 
+
+typealias CompletionHandler = (_ Success: Bool)  -> ()
+
+//url constants
+let BASE_URL = "https://smackapp2chat.herokuapp.com/v1/"
+let URL_REGISTER = "\(BASE_URL)account/register"
+
+
+
+// Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
+
+//USER DEFAULTS
+
+let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
+let USER_EMAIL = "userEmail"
