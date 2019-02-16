@@ -26,17 +26,14 @@ class ChannelVC: UIViewController {
         
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setUpUserInfor() 
+    }
+    
 
    @objc func userDataDidChange(_notif: Notification){
-    if AuthService.instance.isLoggedIn{
-        loginBtn.setTitle(UserDataService.instance.name, for: .normal)
-        userImage.image = UIImage(named: UserDataService.instance.avatarName)
-        userImage.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
-    }else{
-        loginBtn.setTitle("Login", for: .normal)
-        userImage.image = UIImage(named: "menuProfileIcon")
-        userImage.backgroundColor = UIColor.clear
-        }
+    setUpUserInfor()
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
@@ -48,8 +45,18 @@ class ChannelVC: UIViewController {
                     performSegue(withIdentifier: TO_LOGIN, sender: nil)
         }
 
-        
     }
     
+    func setUpUserInfor() {
+        if AuthService.instance.isLoggedIn{
+            loginBtn.setTitle(UserDataService.instance.name, for: .normal)
+            userImage.image = UIImage(named: UserDataService.instance.avatarName)
+            userImage.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
+        }else{
+            loginBtn.setTitle("Login", for: .normal)
+            userImage.image = UIImage(named: "menuProfileIcon")
+            userImage.backgroundColor = UIColor.clear
+        }
+    }
 
 }
