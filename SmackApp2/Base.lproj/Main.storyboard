@@ -122,6 +122,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="qXx-bs-wZx" id="6bT-zB-Oqf"/>
+                        <outlet property="userImage" destination="0DP-07-kFe" id="JgB-O3-wAa"/>
                         <segue destination="Dq3-no-q4x" kind="show" identifier="toLogin" id="dBI-Fg-3DM"/>
                     </connections>
                 </viewController>
@@ -144,13 +145,14 @@
                                     <action selector="closePressed:" destination="Dq3-no-q4x" eventType="touchUpInside" id="aVU-EX-ZCg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-Yt-KWg" customClass="customButtons" customModule="SmackApp2" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-Yt-KWg" customClass="CustomButtons" customModule="SmackApp2" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="300.5" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.3294117647" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GB1-tO-Okn"/>
                                     <constraint firstAttribute="width" constant="250" id="q0N-8I-I72"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -344,7 +346,7 @@
                                 <color key="textColor" red="0.0" green="0.3294117647" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-kM-som" customClass="customButtons" customModule="SmackApp2" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9nw-kM-som" customClass="CustomButtons" customModule="SmackApp2" customModuleProvider="target">
                                 <rect key="frame" x="62.5" y="567" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.3294117647" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -353,6 +355,7 @@
                                     <constraint firstAttribute="height" constant="50" id="pUn-Ad-6TX"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="tgC-tx-LxY"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -502,12 +505,12 @@
         <scene sceneID="KVv-f8-UHE">
             <objects>
                 <viewController id="g6k-bZ-rzA" customClass="ChatVC" customModule="SmackApp2" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pBH-QK-Nhh">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pBH-QK-Nhh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWR-L3-5ZA" customClass="GradientView" customModule="SmackApp2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="77"/>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWR-L3-5ZA" customClass="GradientView" customModule="SmackApp2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bK-wu-74n">
                                         <rect key="frame" x="12" y="45" width="25" height="20"/>
@@ -537,14 +540,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="trailing" secondItem="iMU-Bs-pzn" secondAttribute="trailing" id="8lt-dy-Cau"/>
-                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="leading" secondItem="iMU-Bs-pzn" secondAttribute="leading" id="OgC-NW-3Uq"/>
-                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="top" secondItem="iMU-Bs-pzn" secondAttribute="top" id="gHf-DR-hNd"/>
-                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="top" secondItem="iMU-Bs-pzn" secondAttribute="top" id="gju-Fu-Uij"/>
-                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="leading" secondItem="iMU-Bs-pzn" secondAttribute="leading" id="vtn-IB-CS7"/>
-                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="trailing" secondItem="iMU-Bs-pzn" secondAttribute="trailing" id="w52-0B-6rF"/>
+                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="trailing" secondItem="pBH-QK-Nhh" secondAttribute="trailing" id="8lt-dy-Cau"/>
+                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="leading" secondItem="pBH-QK-Nhh" secondAttribute="leading" id="OgC-NW-3Uq"/>
+                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="top" secondItem="pBH-QK-Nhh" secondAttribute="top" id="gHf-DR-hNd"/>
+                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="top" secondItem="pBH-QK-Nhh" secondAttribute="top" id="gju-Fu-Uij"/>
+                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="leading" secondItem="pBH-QK-Nhh" secondAttribute="leading" id="vtn-IB-CS7"/>
+                            <constraint firstItem="rWR-L3-5ZA" firstAttribute="trailing" secondItem="pBH-QK-Nhh" secondAttribute="trailing" id="w52-0B-6rF"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="iMU-Bs-pzn"/>
+                        <viewLayoutGuide key="safeArea" id="hiq-yy-0GY"/>
                     </view>
                     <connections>
                         <outlet property="menuBtn" destination="6bK-wu-74n" id="v2h-5e-bRX"/>
