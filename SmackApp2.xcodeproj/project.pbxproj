@@ -28,6 +28,7 @@
 		1ECDB7A8221890D700A03A27 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ECDB7A6221890D700A03A27 /* ProfileVC.xib */; };
 		1ECDB7AB2218D0D800A03A27 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECDB7AA2218D0D800A03A27 /* MessageService.swift */; };
 		1ECDB7AD2218D13800A03A27 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECDB7AC2218D13800A03A27 /* Channel.swift */; };
+		1ECDB7AF2219297A00A03A27 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECDB7AE2219297A00A03A27 /* ChannelCell.swift */; };
 		AAE4E3E23D7D16D83B89A255 /* Pods_SmackApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F011B9C68181B5703D3496DE /* Pods_SmackApp2.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		1ECDB7A6221890D700A03A27 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
 		1ECDB7AA2218D0D800A03A27 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		1ECDB7AC2218D13800A03A27 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		1ECDB7AE2219297A00A03A27 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
 		E7D72CDE93446217B56E6537 /* Pods-SmackApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackApp2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmackApp2/Pods-SmackApp2.release.xcconfig"; sourceTree = "<group>"; };
 		E88A7FD5F350E0193610CFE0 /* Pods-SmackApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackApp2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmackApp2/Pods-SmackApp2.debug.xcconfig"; sourceTree = "<group>"; };
 		F011B9C68181B5703D3496DE /* Pods_SmackApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmackApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,6 +151,7 @@
 				1E0C55C82214C39A0043243C /* CustomButtons.swift */,
 				1ECDB7A12217A1F800A03A27 /* AvatarCell.swift */,
 				1ECDB7A32217CD7300A03A27 /* CircleImage.swift */,
+				1ECDB7AE2219297A00A03A27 /* ChannelCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E2FC364220E306000EFC9A8 /* ChannelVC.swift in Sources */,
+				1ECDB7AF2219297A00A03A27 /* ChannelCell.swift in Sources */,
 				1E2FC362220E303800EFC9A8 /* ChatVC.swift in Sources */,
 				1ECDB7A22217A1F800A03A27 /* AvatarCell.swift in Sources */,
 				1E9DC728220F88EB00CD14B2 /* CreateAccountVC.swift in Sources */,
