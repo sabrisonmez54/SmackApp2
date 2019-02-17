@@ -29,11 +29,14 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChange(_notif:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.channelsLoaded(_notif:)), name: NOTIF_CHANNELS_LOADED, object: nil)
+        
         SocketService.instance.getChannel { (success) in
             if success{
                 self.tableView.reloadData()
             }
         }
+        
         
     }
     
@@ -45,6 +48,10 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
    @objc func userDataDidChange(_notif: Notification){
     setUpUserInfor()
+    }
+    
+    @objc func channelsLoaded(_notif: Notification){
+        tableView.reloadData()
     }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
@@ -67,6 +74,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             loginBtn.setTitle("Login", for: .normal)
             userImage.image = UIImage(named: "menuProfileIcon")
             userImage.backgroundColor = UIColor.clear
+            tableView.reloadData()
         }
     }
     
@@ -89,10 +97,25 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             return UITableViewCell()
         }
     }
-    @IBAction func addChannelBtn(_ sender: Any) {
-        let addChannel = AddChannelVC()
-        addChannel.modalPresentationStyle = .custom
-        present(addChannel, animated: true, completion: nil)
+    
+    //selecting hcnanel
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let channel = MessageService.instance.channels[indexPath.row]
+        MessageService.instance.selectedChannel = channel
+        NotificationCenter.default.post(name: NOTIF_CHANNELS_SELECTED, object: nil)
+        
+        self.revealViewController()?.revealToggle(animated: true)
     }
+    
+    @IBAction func addChannelBtn(_ sender: Any) {
+        if AuthService.instance.isLoggedIn{
+            let addChannel = AddChannelVC()
+            addChannel.modalPresentationStyle = .custom
+            present(addChannel, animated: true, completion: nil)
+        }
+    }
+    
+    
+    
     
 }

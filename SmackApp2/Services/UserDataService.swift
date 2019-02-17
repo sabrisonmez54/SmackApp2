@@ -81,6 +81,7 @@ class UserDataService{
         AuthService.instance.isLoggedIn = false
         AuthService.instance.userEmail = ""
         AuthService.instance.userEmail = ""
+        MessageService.instance.clearChannels()
     }
 
 }
