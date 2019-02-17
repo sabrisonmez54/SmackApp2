@@ -28,6 +28,7 @@ class AuthService{
     var authToken: String{
         get{
          return defaults.value(forKey: TOKEN_KEY) as! String
+            
         }
         set{
             defaults.set(newValue, forKey: TOKEN_KEY)
@@ -122,6 +123,7 @@ class AuthService{
                  debugPrint(response.result.error as Any)
             }
         }
+
     }
     func findUserByEmail(completion: @escaping CompletionHandler){
         Alamofire.request("\(URL_USER_BY_EMAIL)\(userEmail)", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: BEARER_HEADER).responseJSON { (response) in
