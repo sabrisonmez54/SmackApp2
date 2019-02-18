@@ -36,8 +36,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 self.tableView.reloadData()
             }
         }
-        
-        
     }
     
     

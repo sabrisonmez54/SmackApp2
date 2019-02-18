@@ -74,7 +74,7 @@ class MessageService {
                         
                         self.messages.append(message)
                     }
-                    print(self.messages)
+                    //print(self.messages)
                     completion(true)
                 }
             }else{
