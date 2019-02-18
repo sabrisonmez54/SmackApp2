@@ -28,5 +28,13 @@ class MessageCell: UITableViewCell {
         userNameLbl.text = message.userName
         userImg.image = UIImage(named: message.userAvatar)
         userImg.backgroundColor = UserDataService.instance.returnUIColor(components: message.userAvatarColor)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "YYYY-MM-dd'T'HH:mm:ss.SSS'Z'"
+        let date = dateFormatter.date(from: message.timeStamp)
+        dateFormatter.dateFormat = "MMM d, h:mm a"
+        
+        guard let dateUnwrapped = date else { return }
+        timeStampLbl.text = dateFormatter.string(from: dateUnwrapped)
     } 
 }
