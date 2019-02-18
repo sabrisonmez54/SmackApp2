@@ -564,6 +564,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="msgBoxEditing:" destination="g6k-bZ-rzA" eventType="editingChanged" id="WRJ-oG-O8F"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-f4-aWW">
                                 <rect key="frame" x="335" y="627" width="30" height="30"/>
@@ -656,6 +659,7 @@
                         <outlet property="channelNameLbl" destination="Q17-ly-73h" id="7I6-gF-sgq"/>
                         <outlet property="menuBtn" destination="6bK-wu-74n" id="v2h-5e-bRX"/>
                         <outlet property="messageTxtBox" destination="zOc-RW-c4h" id="Wzo-Zr-tvz"/>
+                        <outlet property="sendBtn" destination="RI5-f4-aWW" id="cr9-7X-0zC"/>
                         <outlet property="tableView" destination="Y7w-cc-nCg" id="dm6-6i-r0C"/>
                     </connections>
                 </viewController>
