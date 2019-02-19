@@ -11,11 +11,12 @@ import Alamofire
 import SwiftyJSON
 
 class AuthService{
-    
+    // singleton
     static let instance = AuthService()
     
     let defaults = UserDefaults.standard
     
+    //log in check
     var isLoggedIn : Bool{
         get{
             return defaults.bool(forKey: LOGGED_IN_KEY)

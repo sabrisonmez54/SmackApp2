@@ -11,14 +11,13 @@ import UIKit
 class ChannelCell: UITableViewCell {
 
     //Outlets
-    
     @IBOutlet weak var channelName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    //changing background  of selected channel
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
@@ -28,7 +27,6 @@ class ChannelCell: UITableViewCell {
             self.layer.backgroundColor = UIColor.clear.cgColor
         }
     }
-    
     
     func configureCell(channel: Channel){
         let title = channel.channelTitle ?? ""
@@ -41,5 +39,4 @@ class ChannelCell: UITableViewCell {
             }
         }
     }
-
 }

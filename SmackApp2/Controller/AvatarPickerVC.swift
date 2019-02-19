@@ -21,6 +21,7 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
     //Variables
     var avatarType = AvatarType.dark
     
+    //segment control
     @IBAction func segmentControlChanged(_ sender: Any) {
         switch segmentControl.selectedSegmentIndex {
         case 0:
@@ -81,6 +82,4 @@ class AvatarPickerVC: UIViewController, UICollectionViewDelegate, UICollectionVi
         dismiss(animated: true, completion: nil)
     }
     
-    
-
 }

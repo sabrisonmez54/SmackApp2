@@ -9,15 +9,12 @@
 import UIKit
 
 class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
 
     //Outlets
-    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var loginBtn: UIButton!
     @IBAction func prepareforUnwind(segue: UIStoryboardSegue){}
     @IBOutlet weak var userImage: CircleImage!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,8 +129,4 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             present(addChannel, animated: true, completion: nil)
         }
     }
-    
-    
-    
-    
 }

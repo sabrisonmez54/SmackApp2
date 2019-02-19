@@ -11,8 +11,6 @@ import UIKit
 class ProfileVC: UIViewController {
 
     //Outlets
-    
-    
     @IBOutlet weak var userEmail: UILabel!
     @IBOutlet weak var userName: UILabel!
     @IBOutlet weak var profileImg: UIImageView!
@@ -21,7 +19,6 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
-
     }
 
 // show user image email

@@ -15,12 +15,8 @@ class CircleImage: UIImageView {
         setupView()
     }
 
-    
     func setupView(){
         self.layer.cornerRadius = self.frame.width / 2
         self.clipsToBounds = true
-        
     }
-    
-  
 }

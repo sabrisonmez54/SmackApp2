@@ -95,7 +95,7 @@ class CreateAccountVC: UIViewController {
             view.addGestureRecognizer(tap)
         
     }
-    
+    // keyboard dissapear on tap outside
     @objc func handleTap(){
         view.endEditing(true)
     }

@@ -22,7 +22,6 @@ class MessageCell: UITableViewCell {
         super.awakeFromNib()
       
     }
-
     func configureCell(message: Message){
         messageBodyLbl.text = message.message
         userNameLbl.text = message.userName

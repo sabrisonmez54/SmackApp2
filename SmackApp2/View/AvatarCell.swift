@@ -11,7 +11,7 @@ import UIKit
 enum AvatarType{
     case dark
     case light
-}
+    }
 
 class AvatarCell: UICollectionViewCell {
     

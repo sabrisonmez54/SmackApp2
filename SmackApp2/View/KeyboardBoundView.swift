@@ -10,6 +10,8 @@ import UIKit
 
 extension UIView {
     
+    //dynamically changes keyboard to view
+    
     func bindToKeyboard(){
         NotificationCenter.default.addObserver(self, selector: #selector(UIView.keyboardWillChange(_:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
     }
