@@ -115,8 +115,7 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             tableView.selectRow(at: index, animated: false, scrollPosition: .none)
         
         }
-        
-        
+    
         NotificationCenter.default.post(name: NOTIF_CHANNELS_SELECTED, object: nil)
         
         self.revealViewController()?.revealToggle(animated: true)

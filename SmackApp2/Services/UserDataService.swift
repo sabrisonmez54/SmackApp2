@@ -32,6 +32,10 @@ class UserDataService{
         self.avatarName = avatarName
     }
     
+    func setUserName(userName:String) {
+        self.name = userName
+    }
+    
     func  returnUIColor(components : String) -> UIColor {
         //scanner and skipping
         let scanner = Scanner(string: components)
@@ -60,6 +64,7 @@ class UserDataService{
         guard let aUnwrapped = a else {
             return defaultColor
         }
+        
         //convert to cgfloat values
         let rfloat = CGFloat(rUnwrapped.doubleValue)
         let gfloat = CGFloat(gUnwrapped.doubleValue)

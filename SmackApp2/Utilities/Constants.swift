@@ -19,12 +19,14 @@ let URL_USER_ADD = "\(BASE_URL)user/add"
 let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 let URL_GET_CHANNELS = "\(BASE_URL)channel/"
 let URL_GET_MESSAGES = "\(BASE_URL)message/byChannel/"
+let URL_USERNAME_UPDATE = "\(BASE_URL)user/\(UserDataService.instance.id)/"
 
 // Segues
 let TO_LOGIN = "toLogin"
 let TO_CREATE_ACCOUNT = "toCreateAccount"
 let UNWIND = "unwindToChannel"
 let TO_AVATAR_PICKER = "toAvatarPicker"
+//let TO_USERNAME_UPDATE = "toUserNameUpdate"
 
 //Notification
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")

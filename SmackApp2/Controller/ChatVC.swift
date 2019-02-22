@@ -131,6 +131,7 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             
             SocketService.instance.addMessageBody(messageBody: message, userId: UserDataService.instance.id, channelId: channelId) { (success) in
                 if success {
+                    self.getMessages()
                     self.messageTxtBox.text = ""
                     self.messageTxtBox.resignFirstResponder()
                     SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId)
