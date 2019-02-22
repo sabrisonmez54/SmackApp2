@@ -7,11 +7,17 @@ api and assets provided by DevSlopes
 Learned how to:
 
 Use Cocoapods and import SWRevealView
+
 Use @IBDesignable 
+
 Use Alamofire
+
 Use SwiftyJSON to parse JSON 
+
 set up a spinner
+
 The importance of using constants in a separate file
+
 public private(set) as a shortcut to encapsulate data
 How to use collection views
 Use PostMan to see how to send and properly parse web requests 10)Practical uses for singletons
