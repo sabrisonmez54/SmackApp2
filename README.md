@@ -6,6 +6,8 @@ api and assets provided by DevSlopes
 
 Learned how to:
 
+Perform automated user interface tests 
+
 Use Web-API with connection to a MongoDB instance via mLabs & deployed on Heroku as well as a local hosted api
 
 Use Cocoapods and import SWRevealView
