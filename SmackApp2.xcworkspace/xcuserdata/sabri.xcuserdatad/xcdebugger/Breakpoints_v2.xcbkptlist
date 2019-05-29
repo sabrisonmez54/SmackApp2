@@ -58,12 +58,12 @@
                   moduleName = "SmackApp2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sabri/Projects/SmackApp2/SmackApp2/Services/AuthService.swift"
-                  timestampString = "572550688.01835"
+                  timestampString = "580853440.536714"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "171"
                   endingLineNumber = "171"
-                  offsetFromSymbolStart = "293">
+                  offsetFromSymbolStart = "275">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,12 +73,12 @@
                   moduleName = "SmackApp2"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/sabri/Projects/SmackApp2/SmackApp2/Services/AuthService.swift"
-                  timestampString = "572550688.021436"
+                  timestampString = "580853440.540499"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "172"
                   endingLineNumber = "172"
-                  offsetFromSymbolStart = "37">
+                  offsetFromSymbolStart = "115">
                </Location>
             </Locations>
          </BreakpointContent>

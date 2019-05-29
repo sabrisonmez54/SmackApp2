@@ -52,6 +52,11 @@ class LoginVC: UIViewController {
                     }
                 })
             }
+            else{
+                let alert = UIAlertController(title: "Wrong Credentials", message: "try again", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "close", style: .default, handler: nil))
+                self.present(alert, animated: true)
+            }
         }
     }
     

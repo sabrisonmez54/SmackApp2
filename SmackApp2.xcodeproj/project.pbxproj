@@ -35,8 +35,19 @@
 		1ECDB7B7221A652200A03A27 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECDB7B6221A652100A03A27 /* Message.swift */; };
 		1ECDB7B9221A6F8300A03A27 /* KeyboardBoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECDB7B8221A6F8300A03A27 /* KeyboardBoundView.swift */; };
 		1ECDB7BB221A752B00A03A27 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECDB7BA221A752B00A03A27 /* MessageCell.swift */; };
+		1EE9E14C229EEBA10063A1F3 /* SmackApp2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EE9E14B229EEBA10063A1F3 /* SmackApp2UITests.swift */; };
 		AAE4E3E23D7D16D83B89A255 /* Pods_SmackApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F011B9C68181B5703D3496DE /* Pods_SmackApp2.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EE9E14E229EEBA20063A1F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E2FC33C220E1BFE00EFC9A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E2FC343220E1BFE00EFC9A8;
+			remoteInfo = SmackApp2;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1E0C55C82214C39A0043243C /* CustomButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtons.swift; sourceTree = "<group>"; };
@@ -71,6 +82,9 @@
 		1ECDB7B6221A652100A03A27 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		1ECDB7B8221A6F8300A03A27 /* KeyboardBoundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardBoundView.swift; sourceTree = "<group>"; };
 		1ECDB7BA221A752B00A03A27 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		1EE9E149229EEBA10063A1F3 /* SmackApp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmackApp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EE9E14B229EEBA10063A1F3 /* SmackApp2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmackApp2UITests.swift; sourceTree = "<group>"; };
+		1EE9E14D229EEBA20063A1F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7D72CDE93446217B56E6537 /* Pods-SmackApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackApp2.release.xcconfig"; path = "Pods/Target Support Files/Pods-SmackApp2/Pods-SmackApp2.release.xcconfig"; sourceTree = "<group>"; };
 		E88A7FD5F350E0193610CFE0 /* Pods-SmackApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmackApp2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SmackApp2/Pods-SmackApp2.debug.xcconfig"; sourceTree = "<group>"; };
 		F011B9C68181B5703D3496DE /* Pods_SmackApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmackApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +96,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAE4E3E23D7D16D83B89A255 /* Pods_SmackApp2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EE9E146229EEBA10063A1F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				1E2FC346220E1BFE00EFC9A8 /* SmackApp2 */,
+				1EE9E14A229EEBA10063A1F3 /* SmackApp2UITests */,
 				1E2FC345220E1BFE00EFC9A8 /* Products */,
 				50E319880030E24EB4A03889 /* Pods */,
 				80A4AC9A9CF321CDF34D69C6 /* Frameworks */,
@@ -111,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				1E2FC344220E1BFE00EFC9A8 /* SmackApp2.app */,
+				1EE9E149229EEBA10063A1F3 /* SmackApp2UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +223,15 @@
 			path = XIBs;
 			sourceTree = "<group>";
 		};
+		1EE9E14A229EEBA10063A1F3 /* SmackApp2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				1EE9E14B229EEBA10063A1F3 /* SmackApp2UITests.swift */,
+				1EE9E14D229EEBA20063A1F3 /* Info.plist */,
+			);
+			path = SmackApp2UITests;
+			sourceTree = "<group>";
+		};
 		50E319880030E24EB4A03889 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,19 +271,41 @@
 			productReference = 1E2FC344220E1BFE00EFC9A8 /* SmackApp2.app */;
 			productType = "com.apple.product-type.application";
 		};
+		1EE9E148229EEBA10063A1F3 /* SmackApp2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EE9E152229EEBA20063A1F3 /* Build configuration list for PBXNativeTarget "SmackApp2UITests" */;
+			buildPhases = (
+				1EE9E145229EEBA10063A1F3 /* Sources */,
+				1EE9E146229EEBA10063A1F3 /* Frameworks */,
+				1EE9E147229EEBA10063A1F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EE9E14F229EEBA20063A1F3 /* PBXTargetDependency */,
+			);
+			name = SmackApp2UITests;
+			productName = SmackApp2UITests;
+			productReference = 1EE9E149229EEBA10063A1F3 /* SmackApp2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1E2FC33C220E1BFE00EFC9A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Sabri Sönmez";
 				TargetAttributes = {
 					1E2FC343220E1BFE00EFC9A8 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					1EE9E148229EEBA10063A1F3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 1E2FC343220E1BFE00EFC9A8;
 					};
 				};
 			};
@@ -269,6 +323,7 @@
 			projectRoot = "";
 			targets = (
 				1E2FC343220E1BFE00EFC9A8 /* SmackApp2 */,
+				1EE9E148229EEBA10063A1F3 /* SmackApp2UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -283,6 +338,13 @@
 				1E2FC352220E1C0000EFC9A8 /* LaunchScreen.storyboard in Resources */,
 				1E2FC34F220E1C0000EFC9A8 /* Assets.xcassets in Resources */,
 				1E2FC34D220E1BFE00EFC9A8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EE9E147229EEBA10063A1F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,7 +426,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1EE9E145229EEBA10063A1F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EE9E14C229EEBA10063A1F3 /* SmackApp2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EE9E14F229EEBA20063A1F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E2FC343220E1BFE00EFC9A8 /* SmackApp2 */;
+			targetProxy = 1EE9E14E229EEBA20063A1F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1E2FC34B220E1BFE00EFC9A8 /* Main.storyboard */ = {
@@ -543,6 +621,44 @@
 			};
 			name = Release;
 		};
+		1EE9E150229EEBA20063A1F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmackApp2UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sabri.SmackApp2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmackApp2;
+			};
+			name = Debug;
+		};
+		1EE9E151229EEBA20063A1F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SmackApp2UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sabri.SmackApp2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmackApp2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -560,6 +676,15 @@
 			buildConfigurations = (
 				1E2FC357220E1C0000EFC9A8 /* Debug */,
 				1E2FC358220E1C0000EFC9A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EE9E152229EEBA20063A1F3 /* Build configuration list for PBXNativeTarget "SmackApp2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EE9E150229EEBA20063A1F3 /* Debug */,
+				1EE9E151229EEBA20063A1F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
