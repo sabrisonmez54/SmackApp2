@@ -33,4 +33,4 @@ setting up singletons
 Use Atom to read api and js files
 
 ![image](https://github.com/sabrisonmez54/SmackApp2/blob/master/signUpgifPart1.gif)
-![image](https://github.com/sabrisonmez54/SmackApp2/blob/master/signUpgifPart2.gif)
+![image](https://github.com/sabrisonmez54/SmackApp2/blob/master/signUpgifPart3.gif)
