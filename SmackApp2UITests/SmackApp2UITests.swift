@@ -12,37 +12,17 @@ class SmackApp2UITests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
-
         // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
         // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         XCUIApplication().launch()
-
         // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
-
+    
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-//    func testValidLoginSuccess() {
-//
-//        let validUsername = "test@test.com"
-//        let validPassword = "123456"
-//
-//        let app = XCUIApplication()
-//        app.textFields["username"].tap()
-//
-//        let passwordSecureTextField = app.secureTextFields["password"]
-//        passwordSecureTextField.tap()
-//
-//        app.buttons["Login"].tap()
-//
-//    }
     
-    
-   
     func testValidLoginSuccess(){
         
         let validUsername = "test@test.com"
@@ -51,6 +31,7 @@ class SmackApp2UITests: XCTestCase {
         let app = XCUIApplication()
         
         app.buttons["smackBurger"].tap()
+        //app.tables["Empty list"].swipeRight()
         
         let loginButton = app.buttons["Login"]
         loginButton.tap()
@@ -98,12 +79,10 @@ class SmackApp2UITests: XCTestCase {
         userEmailTextField.tap()
         userEmailTextField.typeText(validEmail)
         
-      
         let passwordSecureTextField = app.secureTextFields["password"]
         XCTAssertTrue(passwordSecureTextField.exists)
         passwordSecureTextField.tap()
         passwordSecureTextField.typeText(validPassword)
-        
         
         app.buttons["Choose an Avatar"].tap()
         app.collectionViews.cells.otherElements.containing(.image, identifier:"dark2").element.tap()
@@ -131,7 +110,6 @@ class SmackApp2UITests: XCTestCase {
             var character = passwordMaterial.character(at: Int(randomPosition))
             returnValue += NSString(characters: &character, length: 1) as String
         }
-        
         return returnValue
     }
     
@@ -147,7 +125,6 @@ class SmackApp2UITests: XCTestCase {
             var character = UserNameMaterial.character(at: Int(randomPosition))
             returnValue += NSString(characters: &character, length: 1) as String
         }
-        
         return returnValue
     }
     
@@ -163,8 +140,6 @@ class SmackApp2UITests: XCTestCase {
             var character = UserEmailMaterial.character(at: Int(randomPosition))
             returnValue += NSString(characters: &character, length: 1) as String
         }
-        
         return returnValue + "@test.com"
     }
-
 }
